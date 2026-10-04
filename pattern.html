@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remember the Pattern | Early Music Literacy Program</title>
+<meta name="description" content="Listen to a sound pattern, then change it your way.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="pattern" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#e6dffc">
+    <div class="wrap">
+      <span data-art="pattern"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Remember the Pattern</h1>
+        <p>Listen to a sound pattern, then change it your way.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Remember the Pattern activity">
+      <p class="say" id="say" role="status" aria-live="polite">Press Play the pattern and listen.</p>
+      <div class="pads" id="pads" role="group" aria-label="Sound pads"></div>
+      <div class="trail panel"><span>The pattern:</span> <span class="trail" id="trail" aria-hidden="true"></span></div>
+      <div class="btn-row">
+        <button class="btn btn--sun" id="play" type="button">Play the pattern</button>
+        <button class="btn" id="again" type="button" disabled>Hear it again</button>
+        <button class="btn" id="change" type="button">Change the pattern</button>
+        <button class="btn btn--mint" id="make" type="button">Make my own</button>
+        <button class="btn" id="over" type="button">Start over</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p>A <strong>pattern</strong> is a group of sounds in a certain order. Music is full of patterns that repeat and change.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

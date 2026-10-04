@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loud or Soft | Early Music Literacy Program</title>
+<meta name="description" content="Slide from a whisper sound to a big sound.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="volume" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#ffe3f0">
+    <div class="wrap">
+      <span data-art="volume"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Loud or Soft</h1>
+        <p>Slide from a whisper sound to a big sound.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Loud or Soft activity">
+      <p class="say" id="say" role="status" aria-live="polite">Press Play, then move the slider.</p>
+      <div class="loud" id="loud">
+        <div class="loud__rings" aria-hidden="true"><i style="--k:130"></i><i style="--k:300"></i><i style="--k:470"></i></div>
+        <div class="loud__inst" id="loud-inst" aria-hidden="true"></div>
+      </div>
+      <p id="vol-word" style="margin:0;font-weight:700"></p>
+      <label class="slider">Soft <input type="range" id="vol" min="2" max="100" step="1" value="40" aria-label="Volume, from soft to loud"> Loud</label>
+      <div class="chips" id="vols" role="group" aria-label="Volume choices">
+        <button class="chip" type="button" data-v="15" aria-pressed="false">Soft</button>
+        <button class="chip" type="button" data-v="50" aria-pressed="false">Medium</button>
+        <button class="chip" type="button" data-v="90" aria-pressed="false">Loud</button>
+      </div>
+      <div class="chips" id="loud-sounds" role="group" aria-label="Instrument">
+        <span class="chips__label">Instrument</span>
+        <button class="chip" type="button" data-v="piano" aria-pressed="true">Piano</button>
+        <button class="chip" type="button" data-v="drum" aria-pressed="false">Drum</button>
+        <button class="chip" type="button" data-v="trumpet" aria-pressed="false">Trumpet</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn--sun" id="play" type="button">Play</button>
+        <button class="btn" id="pause" type="button">Pause</button>
+        <button class="btn" id="restart" type="button">Start over</button>
+      </div>
+      <p class="panel" style="margin:0"><strong>Keep the volume comfortable for your ears.</strong> If a sound feels too big, turn it down.</p>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p>Musicians call loud and soft <strong>dynamics</strong>. Soft sounds can feel calm or sneaky. Loud sounds can feel bold or exciting.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

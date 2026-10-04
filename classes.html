@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classes and Events | Early Music Literacy Program</title>
+<meta name="description" content="Free trial sessions, community events, music camps and teacher seminars from the Early Music Literacy Program.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="classes">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<div class="adult-note"><div class="wrap">This page is for parents, guardians and teachers.</div></div>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Classes and events</h1>
+      <p class="lede">Small, friendly sessions where children explore beat, pitch, and instruments together. No experience or instrument needed.</p>
+      <a class="btn btn--sun" href="#ask">Ask about a class</a>
+    </div>
+  </div>
+
+  <section class="band" aria-labelledby="ev-h">
+    <div class="wrap">
+      <h2 id="ev-h">Coming up</h2>
+      <p id="events-sample"><span class="badge badge--draft">Sample listings</span> These dates show how the calendar will look. Confirmed sessions will replace them.</p>
+      <div class="chips" id="event-types" role="group" aria-label="Kind of event" style="margin-bottom:28px">
+        <button class="chip" type="button" data-v="All" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-v="Free trial" aria-pressed="false">Free trials</button>
+        <button class="chip" type="button" data-v="Community" aria-pressed="false">Community events</button>
+        <button class="chip" type="button" data-v="Camp" aria-pressed="false">Camps</button>
+        <button class="chip" type="button" data-v="Teacher seminar" aria-pressed="false">Teacher seminars</button>
+      </div>
+      <div id="events" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="band band--mint" id="ask" aria-labelledby="req-h">
+    <div class="wrap">
+      <h2 id="req-h">Ask about a class</h2>
+      <p>Three short steps. This website does not store or send anything you choose here. At the end, your own email app opens with a draft you can read and edit before sending.</p>
+
+      <div class="sticker" style="max-width:760px">
+        <div class="ask-step">
+          <h3 tabindex="-1">Step 1 of 3: How old is your child?</h3>
+          <div class="chips" id="ask-age" role="group" aria-label="Child's age group">
+            <button class="chip" type="button" data-v="3 to 4" aria-pressed="false">3 to 4</button>
+            <button class="chip" type="button" data-v="5 to 6" aria-pressed="false">5 to 6</button>
+            <button class="chip" type="button" data-v="7 to 8" aria-pressed="false">7 to 8</button>
+            <button class="chip" type="button" data-v="9 to 10" aria-pressed="false">9 to 10</button>
+          </div>
+          <p id="ask-match" role="status" style="margin:16px 0;font-weight:700"></p>
+          <button class="btn btn--sun ask-next" type="button" data-to="1" disabled>Next: choose a time</button>
+        </div>
+
+        <div class="ask-step hide">
+          <h3 tabindex="-1">Step 2 of 3: What time suits your family?</h3>
+          <div class="chips" id="ask-when" role="group" aria-label="Preferred time">
+            <button class="chip" type="button" data-v="Weekday after school" aria-pressed="false">Weekday after school</button>
+            <button class="chip" type="button" data-v="Saturday morning" aria-pressed="false">Saturday morning</button>
+            <button class="chip" type="button" data-v="Online session" aria-pressed="false">Online session</button>
+          </div>
+          <div class="btn-row" style="margin-top:20px">
+            <button class="btn ask-back" type="button" data-to="0">Back</button>
+            <button class="btn btn--sun ask-next" type="button" data-to="2" disabled>Next: permissions</button>
+          </div>
+        </div>
+
+        <div class="ask-step hide">
+          <h3 tabindex="-1">Step 3 of 3: Permissions</h3>
+          <div id="ask-consent">
+            <label class="check"><input type="checkbox" required> <span>I am 18 or older and I am the child's parent or legal guardian.</span></label>
+            <label class="check"><input type="checkbox" required> <span>I have read the <a href="legal.html" target="_blank" rel="noopener">Terms, Privacy and Safety page</a>, including the section on classes and events.</span></label>
+            <label class="check"><input type="checkbox" id="ask-media"> <span>Optional: I am open to discussing photo and video consent. Leaving this unticked means my child will not be photographed or recorded.</span></label>
+          </div>
+          <div class="btn-row">
+            <button class="btn ask-back" type="button" data-to="1">Back</button>
+            <button class="btn btn--sun" id="ask-finish" type="button" disabled>Prepare my email</button>
+          </div>
+        </div>
+
+        <div class="ask-step hide">
+          <h3 tabindex="-1">Your request is ready</h3>
+          <p>You chose: <strong id="ask-summary"></strong></p>
+          <p>Nothing has been sent yet. Press the button to open a draft in your email app. Please do not include medical details in the email. We will ask for anything we need on a paper form.</p>
+          <div class="btn-row">
+            <a class="btn btn--sun" id="ask-mail" href="#">Open my email draft</a>
+            <button class="btn ask-back" type="button" data-to="0">Start over</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="know-h">
+    <div class="wrap grid-2">
+      <div>
+        <h2 id="know-h">Good to know</h2>
+        <ul class="ticks">
+          <li>No payment is taken on this website. Any fee is confirmed in writing before a session.</li>
+          <li>A signed permission form from a parent or guardian is needed before a child joins a session.</li>
+          <li>Children are never tested, graded, or ranked in a class.</li>
+          <li>Photos and video are taken only with separate written consent.</li>
+        </ul>
+      </div>
+      <div class="sticker">
+        <h3>Groups by age</h3>
+        <table class="table">
+          <tr><th>Ages</th><th>Group</th><th>Focus</th></tr>
+          <tr><td>3 to 4</td><td>Little Listeners</td><td>Moving, listening, loud and soft</td></tr>
+          <tr><td>5 to 6</td><td>Beat Builders</td><td>Steady beat, fast and slow</td></tr>
+          <tr><td>7 to 8</td><td>Melody Makers</td><td>High and low, simple tunes</td></tr>
+          <tr><td>9 to 10</td><td>Young Composers</td><td>Patterns and making your own music</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/grownups.js"></script>
+</body>
+</html>

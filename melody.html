@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Make a Melody | Early Music Literacy Program</title>
+<meta name="description" content="Put colorful notes on the lines and hear your own tune.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="melody" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#bfe6fb">
+    <div class="wrap">
+      <span data-art="melody"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Make a Melody</h1>
+        <p>Put colorful notes on the lines and hear your own tune.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Make a Melody activity">
+      <p class="say" id="say" role="status" aria-live="polite">Tap the lines, or tap a colorful button, to add notes.</p>
+      <div class="staffwrap" id="staffwrap"><div class="staff" id="staff" role="group" aria-label="Music staff with 12 steps"></div></div>
+      <div class="notebtns" id="notebtns" role="group" aria-label="Add a note"></div>
+      <div class="btn-row">
+        <button class="btn btn--sun" id="play" type="button">Play</button>
+        <button class="btn" id="pause" type="button">Pause</button>
+        <button class="btn" id="clear" type="button">Clear</button>
+      </div>
+      <div class="chips" id="insts" role="group" aria-label="Instrument">
+        <span class="chips__label">Instrument</span>
+        <button class="chip" type="button" data-v="piano" aria-pressed="true">Piano</button>
+        <button class="chip" type="button" data-v="xylophone" aria-pressed="false">Xylophone</button>
+        <button class="chip" type="button" data-v="flute" aria-pressed="false">Flute</button>
+        <button class="chip" type="button" data-v="violin" aria-pressed="false">Violin</button>
+        <button class="chip" type="button" data-v="guitar" aria-pressed="false">Guitar</button>
+        <button class="chip" type="button" data-v="trumpet" aria-pressed="false">Trumpet</button>
+      </div>
+      <div class="chips" id="speeds" role="group" aria-label="Speed">
+        <span class="chips__label">Speed</span>
+        <button class="chip" type="button" data-v="70" aria-pressed="false">Slow</button>
+        <button class="chip" type="button" data-v="110" aria-pressed="true">Medium</button>
+        <button class="chip" type="button" data-v="160" aria-pressed="false">Fast</button>
+      </div>
+      <div class="chips" id="scenes" role="group" aria-label="Background">
+        <span class="chips__label">Background</span>
+        <button class="chip" type="button" data-v="#eaf7ff" aria-pressed="true">Sky</button>
+        <button class="chip" type="button" data-v="#ffe9d6" aria-pressed="false">Sunset</button>
+        <button class="chip" type="button" data-v="#e2f8e6" aria-pressed="false">Meadow</button>
+        <button class="chip" type="button" data-v="#ece6ff" aria-pressed="false">Twilight</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p>A <strong>melody</strong> is a line of notes, one after another, that makes a tune you can hum. The five lines are called a <strong>staff</strong>. Notes higher on the staff sound higher.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

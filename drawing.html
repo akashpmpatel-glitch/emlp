@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Drawing | Early Music Literacy Program</title>
+<meta name="description" content="Draw while music plays and watch your lines dance.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="drawing" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#fff1bf">
+    <div class="wrap">
+      <span data-art="drawing"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Music Drawing</h1>
+        <p>Draw while music plays and watch your lines dance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Music Drawing activity">
+      <p class="say" id="say" role="status" aria-live="polite">Pick a color and draw. Press Play music to make your brush dance.</p>
+      <canvas class="easel" id="easel" aria-label="Drawing area"></canvas>
+      <div class="controls">
+        <div class="swatches" id="colors" role="group" aria-label="Colors"></div>
+        <div class="btn-row">
+          <button class="btn btn--sun" id="music" type="button" aria-pressed="false">Play music</button>
+          <button class="btn" id="clear" type="button">Clear the page</button>
+          <button class="btn" id="over" type="button">Start over</button>
+        </div>
+      </div>
+      <div class="chips" id="sizes" role="group" aria-label="Brush size">
+        <span class="chips__label">Brush</span>
+        <button class="chip" type="button" data-v="5" aria-pressed="false">Thin</button>
+        <button class="chip" type="button" data-v="12" aria-pressed="true">Medium</button>
+        <button class="chip" type="button" data-v="24" aria-pressed="false">Thick</button>
+      </div>
+      <div class="chips" id="shapes" role="group" aria-label="Shape">
+        <span class="chips__label">Shape</span>
+        <button class="chip" type="button" data-v="brush" aria-pressed="true">Line</button>
+        <button class="chip" type="button" data-v="circle" aria-pressed="false">Circles</button>
+        <button class="chip" type="button" data-v="star" aria-pressed="false">Stars</button>
+        <button class="chip" type="button" data-v="note" aria-pressed="false">Notes</button>
+      </div>
+      <div class="chips" id="moods" role="group" aria-label="Music mood">
+        <span class="chips__label">Music</span>
+        <button class="chip" type="button" data-v="calm" aria-pressed="true">Calm</button>
+        <button class="chip" type="button" data-v="bouncy" aria-pressed="false">Bouncy</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p>Music can make pictures in your mind. Fast music might look zig-zaggy. Calm music might look smooth and wavy. <strong>What does your music look like?</strong></p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

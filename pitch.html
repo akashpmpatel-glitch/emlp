@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore Pitch | Early Music Literacy Program</title>
+<meta name="description" content="Climb the musical stairs from low sounds to high sounds.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="pitch" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#bfe6fb">
+    <div class="wrap">
+      <span data-art="pitch"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Explore Pitch</h1>
+        <p>Climb the musical stairs from low sounds to high sounds.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Explore Pitch activity">
+      <p class="say" id="say" role="status" aria-live="polite">Tap any step to hear its sound.</p>
+      <div class="stairs" id="stairs"><div class="hopper" id="hopper" aria-hidden="true"></div></div>
+      <canvas class="wavebox" id="wave" aria-hidden="true"></canvas>
+      <p style="margin:0">Low sounds make wide, slow waves. High sounds make tight, quick waves.</p>
+      <div class="btn-row">
+        <button class="btn btn--sun" id="again" type="button" disabled>Hear my last two notes</button>
+        <button class="btn" id="both" type="button" disabled>Play them together</button>
+        <button class="btn" id="up" type="button">Walk up the stairs</button>
+        <button class="btn" id="down" type="button">Walk down the stairs</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p><strong>Pitch</strong> means how high or low a sound is. A bird sings a high pitch. A big drum makes a low pitch.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

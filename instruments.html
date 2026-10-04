@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instrument World | Early Music Literacy Program</title>
+<meta name="description" content="Meet eight instruments and hear how each one sounds.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="instruments" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#fff1bf">
+    <div class="wrap">
+      <span data-art="trumpet"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Instrument World</h1>
+        <p>Meet eight instruments and hear how each one sounds.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Instrument World activity">
+      <p class="say" id="say" role="status" aria-live="polite">Pick an instrument and press its button.</p>
+      <div class="chips" id="families" role="group" aria-label="Instrument family">
+        <span class="chips__label">Family</span>
+        <button class="chip" type="button" data-v="All" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-v="Percussion" aria-pressed="false">Percussion</button>
+        <button class="chip" type="button" data-v="Strings" aria-pressed="false">Strings</button>
+        <button class="chip" type="button" data-v="Woodwind" aria-pressed="false">Woodwind</button>
+        <button class="chip" type="button" data-v="Brass" aria-pressed="false">Brass</button>
+        <button class="chip" type="button" data-v="Keyboard" aria-pressed="false">Keyboard</button>
+      </div>
+      <div class="cards" id="inst-grid"></div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p>Instruments live in <strong>families</strong>. Percussion instruments are hit or shaken. String instruments have strings. Woodwinds and brass are played with your breath. Keyboards have keys to press.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

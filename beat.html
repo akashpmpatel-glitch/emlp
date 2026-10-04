@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feel the Beat | Early Music Literacy Program</title>
+<meta name="description" content="Tap along with a steady beat and make your own rhythm.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="beat" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#ffd9d2">
+    <div class="wrap">
+      <span data-art="drum"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Feel the Beat</h1>
+        <p>Tap along with a steady beat and make your own rhythm.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Feel the Beat activity">
+      <p class="say" id="say" role="status" aria-live="polite">Press Start, then tap the big circle.</p>
+      <div class="beat">
+        <div class="bouncer" id="bouncer" aria-hidden="true"></div>
+        <button class="tap-pad" id="pad" type="button">Tap here<small>middle is strong, edge is soft</small></button>
+      </div>
+      <canvas class="lines" id="lines" aria-hidden="true"></canvas>
+      <div class="controls">
+        <div class="btn-row">
+          <button class="btn btn--sun" id="start" type="button">Start</button>
+          <button class="btn" id="pause" type="button">Pause</button>
+          <button class="btn" id="restart" type="button">Start over</button>
+        </div>
+        <button class="chip" id="hear" type="button" aria-pressed="true">Beat sound is on</button>
+      </div>
+      <div class="chips" id="speeds" role="group" aria-label="Beat speed">
+        <span class="chips__label">Speed</span>
+        <button class="chip" type="button" data-v="60" aria-pressed="false">Slow</button>
+        <button class="chip" type="button" data-v="90" aria-pressed="true">Walking</button>
+        <button class="chip" type="button" data-v="120" aria-pressed="false">Quick</button>
+        <button class="chip" type="button" data-v="150" aria-pressed="false">Zooming</button>
+      </div>
+      <div class="chips" id="sounds" role="group" aria-label="Drum sound">
+        <span class="chips__label">Your sound</span>
+        <button class="chip" type="button" data-v="drum" aria-pressed="true">Drum</button>
+        <button class="chip" type="button" data-v="clap" aria-pressed="false">Clap</button>
+        <button class="chip" type="button" data-v="block" aria-pressed="false">Wood block</button>
+        <button class="chip" type="button" data-v="shaker" aria-pressed="false">Shaker</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p><strong>Beat</strong> is the steady pulse in music, like a heartbeat or a ticking clock. <strong>Rhythm</strong> is the pattern of long and short sounds you play on top of it.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>

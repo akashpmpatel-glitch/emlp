@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fast or Slow | Early Music Literacy Program</title>
+<meta name="description" content="Make a tune walk slowly or zoom along.">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="tempo" data-gated>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <div class="act-head" style="--tint:#c4f1dc">
+    <div class="wrap">
+      <span data-art="tempo"></span>
+      <div>
+        <a class="crumb" href="explore.html">&larr; All adventures</a>
+        <h1>Fast or Slow</h1>
+        <p>Make a tune walk slowly or zoom along.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="stage" aria-label="Fast or Slow activity">
+      <p class="say" id="say" role="status" aria-live="polite">Press Play, then change the speed.</p>
+      <div class="track">
+        <div class="walker" id="walker" aria-hidden="true"></div>
+        <div class="track__dots" id="dots" aria-hidden="true"></div>
+      </div>
+      <p id="tempo-word" style="margin:0;font-weight:700"></p>
+      <label class="slider">Slow <input type="range" id="tempo" min="50" max="180" step="1" value="100" aria-label="Tempo, from slow to fast"> Fast</label>
+      <div class="chips" id="tempos" role="group" aria-label="Tempo choices">
+        <button class="chip" type="button" data-v="60" aria-pressed="false">Slow</button>
+        <button class="chip" type="button" data-v="100" aria-pressed="true">Medium</button>
+        <button class="chip" type="button" data-v="150" aria-pressed="false">Fast</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn--sun" id="play" type="button">Play</button>
+        <button class="btn" id="pause" type="button">Pause</button>
+        <button class="btn" id="restart" type="button">Start over</button>
+      </div>
+    </section>
+
+    <aside class="word" aria-label="Music word">
+      <p><strong>Tempo</strong> means how fast or slow music moves. Tempo is the speed of music.</p>
+    </aside>
+  </div>
+
+  <section class="band band--sky" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 id="more-h">Try another adventure</h2>
+      <div class="cards" data-cards></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="content.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/audio.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/activities.js"></script>
+</body>
+</html>
